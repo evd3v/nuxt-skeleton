@@ -19,11 +19,10 @@ export default {
 
   components: false,
 
-  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module'],
+  buildModules: ['@nuxtjs/eslint-module', 'nuxt-vite', '@nuxtjs/stylelint-module'],
 
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/redirect-module',
     '~/modules/users/index.js',
   ],
 
