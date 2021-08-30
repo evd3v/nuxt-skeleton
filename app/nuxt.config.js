@@ -17,7 +17,7 @@ export default {
 
   plugins: [],
 
-  components: true,
+  components: false,
 
   buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module'],
 
@@ -25,16 +25,6 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/redirect-module',
     '~/modules/users/index.js',
-  ],
-
-  /* @nuxtjs/redirect-module
-   * add redirect for trailing slash
-   */
-  redirect: [
-    {
-      from: '^(\\/[^\\?]*[^\\/])(\\?.*)?$',
-      to: '$1/$2',
-    },
   ],
 
   axios: {},

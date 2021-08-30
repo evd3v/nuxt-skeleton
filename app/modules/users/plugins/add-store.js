@@ -1,4 +1,4 @@
-import * as userStore from '../store/'
+import userStore from '@/modules/users/store/index.js'
 
 export default ({ store }) => {
   store.registerModule('users', userStore)
