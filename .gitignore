@@ -90,3 +90,5 @@ sw.*
 *.swp
 
 .husky
+
+.env.local

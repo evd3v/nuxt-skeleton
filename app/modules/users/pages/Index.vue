@@ -1,5 +1,6 @@
 <template>
   <div>
+    TEST ENV: {{ $config.baseURL }}
     <nuxt-child />
   </div>
 </template>

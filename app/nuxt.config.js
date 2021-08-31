@@ -29,4 +29,12 @@ export default {
   axios: {},
 
   build: {},
+
+  vite: {
+    ssr: true,
+  },
+
+  publicRuntimeConfig: {
+    baseURL: process.env.BASE_URL
+  }
 }
