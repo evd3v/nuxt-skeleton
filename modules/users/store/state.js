@@ -1,5 +1,5 @@
 const state = () => ({
-  counter: 2,
-})
+  users: [],
+});
 
 export default state;

@@ -8,5 +8,8 @@
 <script>
 export default {
   name: 'Index',
-}
+  // async mounted() {
+  //   await this.$usersService.getUsers();
+  // },
+};
 </script>

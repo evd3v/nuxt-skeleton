@@ -1,3 +1,5 @@
+import path from 'path';
+
 export default {
   head: {
     title: 'nuxt-skeleton',
@@ -19,22 +21,30 @@ export default {
 
   components: false,
 
-  buildModules: ['@nuxtjs/eslint-module', 'nuxt-vite', '@nuxtjs/stylelint-module'],
+  buildModules: ['@nuxtjs/eslint-module'],
 
   modules: [
     '@nuxtjs/axios',
     '~/modules/users/index.js',
+    '~/modules/home/index.js',
   ],
+
+  eslint: {
+    cache: false,
+    lintDirtyModulesOnly: false,
+  },
 
   axios: {},
 
   build: {},
 
-  vite: {
-    ssr: true,
+  alias: {
+    '@users': path.resolve(__dirname, 'modules/users'),
+    '@global/components': path.resolve(__dirname, 'components/global'),
+    '@shared/components': path.resolve(__dirname, 'components/_shared'),
   },
 
   publicRuntimeConfig: {
-    baseURL: process.env.BASE_URL
-  }
-}
+    baseURL: process.env.BASE_URL,
+  },
+};
